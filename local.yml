@@ -1,0 +1,36 @@
+- hosts: localhost
+  become: true
+  tasks:
+    - name: install packages
+      become: true
+      become_user: root
+      dnf:
+        state: present
+        name:
+          - gimp
+          - mc
+          - tmux
+          - vlc
+          - brave
+          - nmap
+          - audacity
+          - filezilla
+          - hexchat
+          - libreoffice-fresh
+          - git
+          - kitty
+          - lsd
+          - gftp
+          - gnome-disk-utility
+          - zsh
+          - zsh-completions
+          - zsh-syntax-highlighting
+          - krita
+          - mcomix
+          - steam-manjaro
+          - gftp
+          - konversation
+          - calibre
+          - bitwarden
+          - whatsapp-for-linux
+          - opera
